@@ -1,0 +1,94 @@
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.nav-apple {
+    background: linear-gradient(to left, rgb(0, 0, 0), rgb(44, 55, 78), rgb(54, 57, 65));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+.ul-apple {
+    display: flex;
+    position: absolute;
+    right: 35%;
+}
+
+.li-apple {
+    margin-left: 15px;
+    margin-right: 15px;
+    list-style-type: none;
+    font-size: 25px;
+}
+
+
+
+/*Imagen principal */
+.img_principal_applecasesl {
+    width: 100%;
+    height: 650px;
+    background: url("../assets/background/backgroundtotal2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    }
+
+    .img_applecasesl {
+    margin-top: 45px;
+    margin-right: 20px;
+    }
+
+    .img_textobotton_applecasesl h1 {
+    font-size: 75px;
+    font-family: "Noto Sans KR", sans-serif;
+    margin-left: 40px;
+    color: white;
+    line-height: 0.8em;
+}
+    .img_textobotton_applecasesl .span_applecasesl {
+    color: white;
+    background: linear-gradient(to left, #ADA996, #DBDBDB, #EAEAEA);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 38px;
+    }
+    .img_textobotton_applecasesl span {
+    background: linear-gradient(to right, rgb(255, 176, 6), rgb(219, 46, 133), rgb(219, 46, 133), rgb(255, 176, 6), rgb(255, 176, 6), rgb(219, 46, 133));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 50px;
+    }
+    .img_textobotton_applecasesl button a {
+    display: block;
+    font-size: 23px;
+    font-family: "Space Grotesk", sans-serif;
+    padding: 7px 20px;
+    color: black;
+    text-decoration: none;
+}
+
+.btnimg {
+    padding: 7px 20px;
+    font-size: 23px;
+    text-align: center;
+}
+
+

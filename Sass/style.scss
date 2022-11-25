@@ -1,0 +1,157 @@
+$fuente-apple: 'Noto Sans KR', sans-serif;
+
+@font-face {
+    font-family: "tittle-apple";
+    src: url("../Assets/fonts/Moonrising.otf");
+}
+@font-face {
+    font-family: "tittle--apple";
+    src: url("../Assets/fonts/LEMONMILK-Regular.otf");
+}
+@font-face {
+    font-family: "li-apple";
+    src: url("../Assets/fonts/WorkSans-Regular.ttf");
+}
+
+/* Style for all html */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* NAV */
+.nav-apple {
+    background: linear-gradient(to left, rgb(0, 0, 0), rgb(44, 55, 78), rgb(54, 57, 65));
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 5px;
+
+.tittle-apple {
+    margin: 0;
+    margin-left: 33px;
+}
+
+.ul-apple {
+    display: flex;   
+}
+
+.li-apple {
+    margin-top: 17px;
+    margin-left: 15px;
+    margin-right: 15px;
+    list-style-type: none;
+    font-size: 17px;
+    letter-spacing: 1px;
+    font-family: "li-apple";
+    
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.233);
+        border-radius: 2px;
+        padding: 5px;
+        }
+}
+
+}
+
+.li-contact {
+    position: relative;
+    left: 75rem;
+}
+
+/* HEADER - INDEX */
+.content-apple {
+    width: 100%;
+    height: 650px;
+    background: url("../assets/background/backgroundtotal2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .img-apple {
+    margin-top: 41px;
+    margin-right: 20px;
+    }
+
+    h1 {
+    font-size: 80px;
+    font-family: "Noto Sans KR", sans-serif;
+    margin-left: 40px;
+    color: white;
+    line-height: 0.8em;
+    }
+
+    .span-apple {
+    color: white;
+    background: linear-gradient(to left, #ADA996, #DBDBDB, #EAEAEA);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 38px;
+    }
+
+    span {
+    background: linear-gradient(to right, rgb(255, 176, 6), rgb(219, 46, 133), rgb(219, 46, 133), rgb(255, 176, 6), rgb(255, 176, 6), rgb(219, 46, 133));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 50px;
+    }
+}
+
+.btnimg {
+    margin-top: 7px;
+    padding: 7px 20px;
+    font-size: 23px;
+    text-align: center;
+    }
+
+
+
+/* MAIN - INDEX */
+
+.img-secundaria-apple {
+    width: 100%;
+    height: 650px;
+    background: url("../assets/background/backgroundtotal.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+
+.textosec_apple{ 
+    display: block;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 300px;
+    margin-left: 45px;
+}
+
+    h2 {
+    font-size: 50px;
+    font-family: $fuente-apple;
+    color: white;
+}
+
+    span {
+    background: linear-gradient(to right,  rgb(255, 176, 6),rgb(219, 46, 133), rgb(219, 46, 133),rgb(255, 176, 6), rgb(255, 176, 6),rgb(219, 46, 133));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 50px;
+}
+
+}
+
+
+/* PAGE PRODUCTS */
+

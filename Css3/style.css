@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "tittle-apple";
   src: url("../Assets/fonts/Moonrising.otf"); }
@@ -10,24 +11,40 @@
   font-family: "li-apple";
   src: url("../Assets/fonts/WorkSans-Regular.ttf"); }
 
+@font-face {
+  font-family: "roboto";
+  src: url("../Assets/fonts/WorkSans-Light.ttf"); }
+
+/* Style for all html */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
 /* NAV */
+.nav-index {
+  width: 100%;
+  height: 733px;
+  background: url("../assets/background/backgroundtotal2.png");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
 .nav-apple {
-  background: linear-gradient(to left, black, #2c374e, #363941);
   display: flex;
   align-items: center;
-  background-color: black;
   color: white;
   padding: 5px; }
   .nav-apple .tittle-apple {
-    margin: 0;
-    margin-left: 33px; }
+    margin-left: 30px;
+    background: linear-gradient(to right, #7ba6c7, #d7d2cc);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent; }
   .nav-apple .ul-apple {
-    display: flex; }
+    display: flex;
+    margin-top: -4px;
+    margin-left: 40px;
+    padding: 8px; }
   .nav-apple .li-apple {
     margin-top: 17px;
     margin-left: 15px;
@@ -35,24 +52,54 @@
     list-style-type: none;
     font-size: 17px;
     letter-spacing: 1px;
-    font-family: "li-apple"; }
-    .nav-apple .li-apple:hover {
-      background-color: rgba(255, 255, 255, 0.233);
-      border-radius: 2px;
-      padding: 5px; }
+    font-family: "li-apple";
+    background: none;
+    border: none;
+    color: white; }
+  .nav-apple a {
+    position: relative;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 0.5px; }
+  .nav-apple a:after {
+    content: "";
+    position: absolute;
+    background-color: #7474be;
+    height: 2px;
+    width: 0%;
+    left: 0;
+    bottom: -2px;
+    transition: 0.3s; }
+  .nav-apple a:hover:after {
+    width: 100%; }
 
 .li-contact {
   position: relative;
-  left: 75rem; }
+  left: 62rem;
+  bottom: 10px; }
+
+.li-buy {
+  background: transparent;
+  border: none;
+  position: relative;
+  top: 15px;
+  left: 59rem; }
+
+.contact-prod {
+  position: relative;
+  left: 59rem; }
+
+.nav-location {
+  width: 100%;
+  height: 450px;
+  background: url("../Assets/background/backgroundtotal2.png");
+  background-size: cover;
+  opacity: 0.8; }
 
 /* HEADER - INDEX */
 .content-apple {
-  width: 100%;
-  height: 650px;
-  background: url("../assets/background/backgroundtotal2.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -81,15 +128,23 @@
     font-size: 50px; }
 
 .btnimg {
-  margin-top: 7px;
+  margin-top: 20px;
   padding: 7px 20px;
-  font-size: 23px;
+  font-size: 25px;
   text-align: center; }
+  .btnimg a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-family: "Noto Sans KR", sans-serif; }
+  .btnimg a:after {
+    background-color: white;
+    color: black; }
 
 /* MAIN - INDEX */
 .img-secundaria-apple {
   width: 100%;
-  height: 650px;
+  height: 600px;
   background: url("../assets/background/backgroundtotal.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -101,7 +156,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    margin-bottom: 300px;
+    margin-bottom: 200px;
     margin-left: 45px; }
   .img-secundaria-apple h2 {
     font-size: 50px;
@@ -113,5 +168,314 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 50px; }
+  .img-secundaria-apple .img-secundaria {
+    position: relative;
+    top: 90px; }
+
+.theme-darkap {
+  background-color: #000000; }
+  .theme-darkap .mac-h3 {
+    color: white;
+    position: absolute;
+    top: 94rem;
+    left: 59%;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 100px; }
+  .theme-darkap .mac-h4 {
+    background: linear-gradient(to right, #ffb006, #db2e85, #db2e85, #ffb006, #ffb006, #db2e85);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: rgba(255, 255, 255, 0.778);
+    position: absolute;
+    top: 103rem;
+    left: 54%;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 35px; }
+  .theme-darkap .mac-h5 {
+    width: 45%;
+    color: white;
+    position: absolute;
+    top: 112rem;
+    left: 49%;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 30px; }
+
+/* FOOTER */
+.footer-apple {
+  margin-top: -6px;
+  background: linear-gradient(to right, black, #2c374e, #363941);
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .footer-apple .redsocial {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center; }
+  .footer-apple .redsocial img:hover {
+    width: 55px;
+    transition: 0.3s; }
+  .footer-apple img {
+    margin-left: 50px; }
+  .footer-apple .copyright h5 {
+    font-size: 15px;
+    font-family: "li-apple";
+    letter-spacing: 1px;
+    margin-top: 13px;
+    color: white;
+    text-transform: uppercase; }
+  .footer-apple .contacto-apple {
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    flex-direction: column; }
+  .footer-apple .whatsapp_apple, .footer-apple .gmail_apple {
+    display: flex;
+    align-items: center;
+    color: white;
+    margin-right: 20px;
+    letter-spacing: 1px; }
+    .footer-apple .whatsapp_apple .h4-whatsapp, .footer-apple .whatsapp_apple .h4-gmail, .footer-apple .gmail_apple .h4-whatsapp, .footer-apple .gmail_apple .h4-gmail {
+      font-size: 18px;
+      font-family: "li-apple";
+      margin-top: 7px; }
+    .footer-apple .whatsapp_apple img, .footer-apple .gmail_apple img {
+      margin-top: 7px;
+      margin-right: 12px; }
 
 /* PAGE PRODUCTS */
+.background-product {
+  width: 100%;
+  height: 100vw;
+  background: url("../Assets/background/backgroundtotal2.png");
+  background-size: cover;
+  background-attachment: fixed; }
+
+/* Portada Products */
+.img-product {
+  width: 100%;
+  height: 450px;
+  background: url("../Assets/background/page-products.png");
+  background-size: cover; }
+
+/*CONTENT - MAIN PRODUCT */
+.container-product {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(4, auto);
+  justify-items: center;
+  margin-top: 40px;
+  margin-left: 160px;
+  margin-right: 160px;
+  grid-row-gap: 11px; }
+  .container-product .card {
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    background: url("../Assets/background/backgroundtotal2.png");
+    background-attachment: fixed;
+    font-family: "li-apple";
+    text-align: start;
+    color: white; }
+  .container-product .content-h3 {
+    text-align: center;
+    border-radius: 0.2rem;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-family: "li-apple";
+    background: url("../Assets/background/backgroundtotal2.png");
+    background-size: cover;
+    font-weight: bolder;
+    color: white;
+    text-transform: uppercase; }
+  .container-product .content-h4 {
+    margin-left: 15px;
+    font-size: 20px; }
+  .container-product .content-price {
+    margin-top: 9px;
+    margin-left: 15px;
+    font-size: 20px; }
+  .container-product .content-text {
+    margin-left: 15px;
+    font-size: 15px; }
+  .container-product .comprar {
+    border: none;
+    color: white;
+    background-color: black;
+    padding: 5px;
+    text-transform: uppercase; }
+
+/* MODAL CONTAINER - PRODUCTS */
+.modal-container {
+  width: 80%;
+  margin: 0 10%;
+  border-radius: 0.5rem;
+  max-height: 84vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url("../Assets/background/backgroundtotal2.png");
+  background-size: cover;
+  color: white;
+  position: fixed;
+  top: 8vh;
+  overflow: auto;
+  z-index: 9;
+  scrollbar-color: none; }
+  .modal-container .modal-container::-webkit-scrollbar {
+    display: none; }
+  .modal-container img {
+    width: 150px; }
+  .modal-container .modal-header {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    color: black;
+    width: 100%; }
+  .modal-container .modal-header-tittle {
+    justify-self: start; }
+  .modal-container .modal-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 0.5rem; }
+
+/*CONTADOR DE CANTIDAD */
+.cantidad-carrito {
+  background-color: #fefeff;
+  color: black;
+  border-radius: 100%;
+  font-size: 12px;
+  padding: 5px;
+  top: 17px;
+  right: -12px;
+  position: absolute;
+  display: none; }
+
+/*CARRITO */
+.sumar,
+.restar {
+  cursor: pointer; }
+
+.footer-product {
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  margin: 40px 40px 0px 40px; }
+
+/* Page Ubication */
+/*iframe Productos*/
+.portada-location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px; }
+  .portada-location .h4-location {
+    display: flex;
+    align-items: center;
+    font-size: 60px;
+    font-family: "tittle-apple";
+    color: white;
+    margin-left: 20px; }
+  .portada-location h4 {
+    font-size: 70px;
+    text-align: center; }
+  .portada-location span {
+    background: linear-gradient(to right, #ffb006, #db2e85, #db2e85, #ffb006, #ffb006, #db2e85);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 50px; }
+
+.body-location {
+  width: 100%;
+  background: url("../Assets/background/backgroundtotal.png"); }
+
+.contenedor-ubicación {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .contenedor-ubicación .tamaño-ubi {
+    width: 45%;
+    margin: auto; }
+  .contenedor-ubicación .border-ubi {
+    margin: 18px 22px 25px 20px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 1em;
+    color: black; }
+  .contenedor-ubicación h2 {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    color: #000000;
+    font-family: 'Assistant', sans-serif;
+    border-bottom: 1px solid #000000;
+    font-size: 27px;
+    text-align: center; }
+  .contenedor-ubicación ul {
+    color: #000000;
+    font-family: 'Assistant', sans-serif;
+    font-size: 18px; }
+  .contenedor-ubicación img {
+    margin-top: -24px; }
+
+.iframe-ubi {
+  border-radius: 1em;
+  margin: 15px 15px -15px -1px; }
+
+.footer-location {
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  margin: 30px 40px 0px 40px; }
+
+.back-c {
+  width: 100%;
+  height: 100vh;
+  background: url("../Assets/background/backgroundtotal2.png");
+  background-size: cover; }
+
+.contenedor-form {
+  width: 30%;
+  background: url("../Assets/background/backgroundtotal2.png");
+  box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.4);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  position: absolute;
+  top: 8rem;
+  right: 5rem; }
+  .contenedor-form p {
+    text-align: center;
+    margin: 20px;
+    font-size: 23px;
+    font-family: 'roboto'; }
+  .contenedor-form input {
+    width: 100%;
+    padding: 5px 30px;
+    margin-top: 15px; }
+  .contenedor-form textarea {
+    width: 100%;
+    padding: 20px;
+    align-items: center;
+    margin-top: 15px; }
+  .contenedor-form button {
+    width: 100%;
+    padding: 10px;
+    position: relative;
+    top: 3rem;
+    left: 0.1rem;
+    font-size: 20px; }
+
+.footer-contact {
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  margin: 30px 40px 0px 40px;
+  position: absolute;
+  bottom: 0;
+  width: 95%; }

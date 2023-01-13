@@ -1,5 +1,8 @@
 $fuente-apple: 'Noto Sans KR', sans-serif;
 
+
+// FONTS 
+
 @font-face {
     font-family: "tittle-apple";
     src: url("../Assets/fonts/Moonrising.otf");
@@ -12,6 +15,10 @@ $fuente-apple: 'Noto Sans KR', sans-serif;
     font-family: "li-apple";
     src: url("../Assets/fonts/WorkSans-Regular.ttf");
 }
+@font-face {
+    font-family: "roboto";
+    src: url("../Assets/fonts/WorkSans-Light.ttf");
+}
 
 /* Style for all html */
 * {
@@ -20,22 +27,37 @@ $fuente-apple: 'Noto Sans KR', sans-serif;
     box-sizing: border-box;
 }
 
+
+
 /* NAV */
+
+.nav-index {
+    width: 100%;
+    height: 733px;
+    background: url("../assets/background/backgroundtotal2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .nav-apple {
-    background: linear-gradient(to left, rgb(0, 0, 0), rgb(44, 55, 78), rgb(54, 57, 65));
     display: flex;
     align-items: center;
-    background-color: black;
     color: white;
     padding: 5px;
-
+    
 .tittle-apple {
-    margin: 0;
-    margin-left: 33px;
+    margin-left: 30px;
+    background: linear-gradient(to right,#7ba6c7,#d7d2cc); 
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .ul-apple {
-    display: flex;   
+    display: flex;
+    margin-top: -4px;
+    margin-left: 40px;
+    padding: 8px;
 }
 
 .li-apple {
@@ -45,30 +67,79 @@ $fuente-apple: 'Noto Sans KR', sans-serif;
     list-style-type: none;
     font-size: 17px;
     letter-spacing: 1px;
-    font-family: "li-apple";
-    
-    &:hover {
-        background-color: rgba(255, 255, 255, 0.233);
-        border-radius: 2px;
-        padding: 5px;
-        }
+    font-family: "li-apple"; 
+    background: none;
+    border: none;
+    color: white;
+}
+
+a {
+    position: relative;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+}
+
+a:after {
+    content: "";
+    position: absolute;
+    background-color: rgb(116, 116, 190);
+    height: 2px;
+    width: 0%;
+    left: 0;
+    bottom: -2px;
+    transition: 0.3s;
+}
+
+a:hover:after {
+    width: 100%;
 }
 
 }
 
+
+// CONTACTO INDEX
 .li-contact {
     position: relative;
-    left: 75rem;
+    left: 62rem;
+    bottom: 10px;
 }
 
-/* HEADER - INDEX */
-.content-apple {
+.li-buy {
+    background: transparent;
+    border: none;
+    position: relative;
+    top: 15px;
+    left: 59rem;
+}
+
+// CONTACTO PRODUCTOS 
+
+.contact-prod {
+    position: relative;
+    left: 59rem;
+}
+
+
+// PORTADA DEL NAV LOCATION
+
+.nav-location {
     width: 100%;
-    height: 650px;
-    background: url("../assets/background/backgroundtotal2.png");
-    background-repeat: no-repeat;
+    height: 450px;
+    background: url("../Assets/background/backgroundtotal2.png");
     background-size: cover;
-    background-attachment: fixed;
+    opacity: 0.8;
+}
+
+
+
+
+/* HEADER - INDEX */
+
+
+.content-apple {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -106,10 +177,22 @@ $fuente-apple: 'Noto Sans KR', sans-serif;
 }
 
 .btnimg {
-    margin-top: 7px;
+    margin-top: 20px;
     padding: 7px 20px;
-    font-size: 23px;
+    font-size: 25px;
     text-align: center;
+
+    a {
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+        font-family: "Noto Sans KR", sans-serif;
+    }
+    a:after {
+        background-color: white;
+        color: black;
+    }
+    
     }
 
 
@@ -118,7 +201,7 @@ $fuente-apple: 'Noto Sans KR', sans-serif;
 
 .img-secundaria-apple {
     width: 100%;
-    height: 650px;
+    height: 600px;
     background: url("../assets/background/backgroundtotal.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -132,7 +215,7 @@ $fuente-apple: 'Noto Sans KR', sans-serif;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    margin-bottom: 300px;
+    margin-bottom: 200px;
     margin-left: 45px;
 }
 
@@ -149,9 +232,493 @@ $fuente-apple: 'Noto Sans KR', sans-serif;
     -webkit-text-fill-color: transparent;
     font-size: 50px;
 }
+    .img-secundaria {
+        position: relative;
+        top: 90px;
+}
+
+}
+
+// VIDEO MAC
+
+
+.theme-darkap {
+background-color: #000000;
+
+
+.mac-h3 {
+color: white;
+position: absolute;
+top: 94rem;
+left: 59%;
+font-family: $fuente-apple;
+font-size: 100px;
+}
+
+.mac-h4 {
+    background: linear-gradient(to right,  rgb(255, 176, 6),rgb(219, 46, 133), rgb(219, 46, 133),rgb(255, 176, 6), rgb(255, 176, 6),rgb(219, 46, 133));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: rgba(255, 255, 255, 0.778);
+    position: absolute;
+    top: 103rem;
+    left: 54%;
+    font-family: $fuente-apple;
+    font-size: 35px;
+}
+
+.mac-h5 {
+    width: 45%;
+    color: white;
+    position: absolute;
+    top: 112rem;
+    left: 49%;
+    font-family: $fuente-apple;
+    font-size: 30px;
+}
+
+}
+
+/* FOOTER */
+
+.footer-apple {
+    margin-top: -6px;
+    background: linear-gradient(to right, rgb(0, 0, 0), rgb(44, 55, 78), rgb(54, 57, 65));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+.redsocial {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;                 
+}
+
+.redsocial img:hover {
+    width: 55px;
+    transition: 0.3s;
+}
+
+img {
+    margin-left: 50px;
+}
+
+.copyright h5{
+    font-size: 15px;
+    font-family: "li-apple";
+    letter-spacing: 1px;
+    margin-top: 13px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+}
+
+.contacto-apple {
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    flex-direction: column;
+}
+
+.whatsapp_apple, .gmail_apple {
+    display: flex;
+    align-items: center;
+    color: white;
+    margin-right: 20px;
+    letter-spacing: 1px;
+
+    .h4-whatsapp {
+    font-size: 18px;
+    font-family: "li-apple";
+    margin-top: 7px;
+    }
+
+    .h4-gmail {
+    @extend .h4-whatsapp;
+    }
+
+    img {
+        margin-top: 7px;
+        margin-right: 12px;
+    }
+}
+}
+
+/* PAGE PRODUCTS */
+
+.background-product {
+    width: 100%;
+    height: 100vw;
+    background: url("../Assets/background/backgroundtotal2.png");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Portada Products */
+
+.img-product {
+    width: 100%;
+    height: 450px;
+    background: url("../Assets/background/page-products.png");
+    background-size: cover;
+}
+
+/*CONTENT - MAIN PRODUCT */
+
+.container-product{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(4, auto);
+    justify-items: center;
+    margin-top: 40px;
+    margin-left: 160px;
+    margin-right: 160px;
+    grid-row-gap: 11px;
+    
+    .card {
+        display: flex;
+        flex-direction: column;
+        width: 380px;
+        background: url("../Assets/background/backgroundtotal2.png");
+        background-attachment: fixed;
+        font-family: "li-apple";
+        text-align: start;
+        color: white;
+    }
+
+    .content-h3 { 
+        text-align: center;
+        border-radius: 0.2rem;
+        padding: 10px;
+        margin-bottom: 15px;
+        font-family: "li-apple";
+        background: url("../Assets/background/backgroundtotal2.png");
+        background-size: cover;
+        font-weight: bolder;
+        color: white;
+        text-transform: uppercase;
+        }
+
+    .content-h4 {
+        margin-left: 15px;
+        font-size: 20px;
+    }
+    .content-price {
+        margin-top: 9px;
+        margin-left: 15px;
+        font-size: 20px;
+        
+    }
+    .content-text {
+        margin-left: 15px;
+        font-size: 15px ;
+    }
+
+    .comprar{
+        border: none;
+        color: white;
+        background-color: black;
+        padding: 5px;
+        text-transform: uppercase;
+    }
+}
+
+
+/* MODAL CONTAINER - PRODUCTS */
+
+.modal-container {
+    width: 80%;
+    margin: 0 10%;
+    border-radius: 0.5rem;
+    max-height: 84vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("../Assets/background/backgroundtotal2.png");
+    background-size: cover;
+    color: white;
+    position: fixed;
+    top: 8vh;
+    overflow: auto;
+    z-index: 9;
+    scrollbar-color: none;
+
+    .modal-container::-webkit-scrollbar {
+        display: none;
+    }
+
+    img {
+        width: 150px;
+        
+    }
+
+    .modal-header {
+        display: flex;
+        justify-content: space-around;
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        width: 100%;
+    }
+    .modal-header-tittle {
+        justify-self: start;
+    }
+    .modal-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+        border: 1px solid white;
+        border-radius: 0.5rem;
+        
+    }
+}
+
+/*CONTADOR DE CANTIDAD */
+
+.cantidad-carrito{
+    background-color: rgb(254, 254, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 100%;
+    font-size: 12px;
+    padding: 5px;
+    top: 17px;
+    right: -12px;
+    position: absolute;
+    display: none;
+}
+
+
+/*CARRITO */
+
+.sumar,
+.restar{
+    cursor: pointer;
+}
+
+.footer-product {
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    margin: 40px 40px 0px 40px;
+}
+
+/* Page Ubication */
+
+/*iframe Productos*/
+
+.portada-location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+
+.h4-location {
+    display: flex;
+    align-items: center;
+    font-size: 60px;
+    font-family: "tittle-apple";
+    color: white;
+    margin-left: 20px;
+}
+
+h4 {
+    font-size: 70px;
+    text-align: center;
+}
+
+span {
+    background: linear-gradient(to right,  rgb(255, 176, 6),rgb(219, 46, 133), rgb(219, 46, 133),rgb(255, 176, 6), rgb(255, 176, 6),rgb(219, 46, 133));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 50px;
+}
+
+
+}
+
+.body-location {
+    width: 100%;
+    background: url("../Assets/background/backgroundtotal.png");
+}
+
+.contenedor-ubicación {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+    .tamaño-ubi {
+        width: 45%;
+        margin: auto;
+    }
+
+    .border-ubi {
+        margin: 18px 22px 25px 20px;
+        padding: 10px;
+        background-color: white;
+        border-radius: 1em;
+        color: black;
+    }
+
+    h2 {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        color: #000000;
+        font-family: 'Assistant', sans-serif;
+        border-bottom: 1px solid #000000;
+        font-size: 27px;
+        text-align: center;
+    }
+
+    ul {
+        color: #000000;
+        font-family: 'Assistant', sans-serif;
+        font-size: 18px;
+    }
+
+    img {
+        margin-top: -24px;
+    }
+
+}
+
+.iframe-ubi {
+    border-radius: 1em;
+    margin: 15px 15px -15px -1px;
+}
+
+.footer-location {
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    margin: 30px 40px 0px 40px;
+}
+
+
+
+//  PAGE CONTACT
+
+.back-c {
+    width: 100%;
+    height: 100vh;
+    background: url("../Assets/background/backgroundtotal2.png");
+    background-size: cover;
+}
+
+
+// FORM CONTACT
+
+
+.contenedor-form {
+    width: 30%;
+    background: url("../Assets/background/backgroundtotal2.png");
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.4);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+
+    position: absolute;
+    top: 8rem;
+    right: 5rem;
+    
+    p {
+        
+        text-align: center;
+        margin: 20px;
+        font-size: 23px;
+        font-family: 'roboto';
+    }
+
+    input {
+        width: 100%;
+        padding: 5px 30px;
+        margin-top: 15px;
+    }
+
+    textarea {
+        width: 100%;
+        padding: 20px;
+        align-items: center;
+        margin-top: 15px;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px ;
+        position: relative;
+        top: 3rem;
+        left: 0.1rem;
+        font-size: 20px;
+    }
 
 }
 
 
-/* PAGE PRODUCTS */
+// .content-total {
+//     width: 100%;
+    
+// }
 
+
+// .contenedor-form {
+//     width: 30%;
+//     height: 700px;
+//     color: white;
+//     background: url("../Assets/background/backgroundtotal2.png");
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     font-family: 'roboto';
+//     font-weight: 550;
+//     box-shadow: 0px 0px 20px 0 rgba(255, 255, 255, .4);
+
+//     position: relative;
+//     top: 4rem;
+//     left: 25%;
+
+//     form {
+//     font-size: 20px ;
+//     }
+
+//     p {
+//     text-align: center; 
+//     margin: 20px;
+//     }
+
+//     input {
+//         width: 100%;
+//         padding: 5px 70px 5px 70px; 
+//         border: none;
+//         margin-top: 10px;
+//     }
+
+//     textarea {
+//         width: 100%;
+//         margin-top: 10px;
+//     }
+
+//     button {
+//         width: 100%;
+//         padding: 10px 35px;
+//         margin-top: 70px;
+//     }
+// }
+
+
+
+// FOOTER CONTACT
+
+.footer-contact {
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    margin: 30px 40px 0px 40px;
+    position: absolute;
+    bottom: 0;
+    width: 95%;
+    
+}

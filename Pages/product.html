@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,44 +26,70 @@
     <link rel="stylesheet" href="../Css3/style.css">
     <title>AppleCase SL Productos</title>
 </head>
-<body>
-    
 
+
+<body class="background-product">
+    <!-- Imagen Portada -->
+    <div class="img-product">
 <nav id="nav-apple" class="nav-apple">
-    <h2 class="tittle-apple"><img src="../Assets/icon/AppleCase SL.png" alt="icon apple" width="50px"></h2>
+    <h2 class="tittle-apple">AppleCase SL</h2>
     <ul class="ul-apple">
-        <li class="li-apple"><a href="../index.html"></a>Inicio</li>
-        <li class="li-apple"><a href="#"></a>Productos</li>
-        <li class="li-apple"><a href="./location.html"></a>Ubicación</li>
-        <li class="li-apple"><a href="./us.html"></a>Nosotros</li>
-        <div class="li-contact">
-        <li class="li-apple"><a href="./contact.html"></a>Contacto <i class="fa-solid fa-headphones-simple"></i></li>
+        <li class="li-apple"><a href="../index.html">Inicio</a></li>
+        <li class="li-apple"><a href="#">Productos</a></li>
+        <li class="li-apple"><a href="./location.html">Ubicación</a></li>
+        <li class="li-apple"><a href="./us.html">Nosotros</a></li>
+        <div class="contact-prod">
+        <li class="li-apple"><a href="./contact.html">Contacto</a><img width="20%" src="/Assets/icon/icons8-volumen-del-timbre-64.png" alt=""></li>
+        </div>
+        <div>
+            <button id="buy-apple" class="li-buy"><img src="../Assets/icon/carrito3.png" width="30px"alt=""><span id="cantidadCarrito" class="cantidad-carrito"></span></button>
         </div>
     </ul>
 </nav>
+</div>
 
 <main>
-    <div id="containter-product" class="container-product"></div>
+    
 
+    <!-- Contenido principal -->
+    <div id="containerProduct" class="container-product"></div>
+
+    <!--Carrito -->
+
+    <div id="modal-container" class="modal-container"></div>
 
 
 
 
 </main>
 
-
-
-
-
-
-
-
-
+<footer class="footer-apple footer-product">
+    <div class="redsocial">
+    <a  href="https://www.instagram.com/" target="_blank"><img src="../Assets/icon/instagram.png" alt="logo de Instagram" width="50"></a>
+    <a  href="https://www.facebook.com" target="_blank"><img src="../Assets/icon/facebook.png" alt="Logo de Facebook" width="50"></a>
+    <a  href="https://www.twitter.com" target="_blank"><img src="../Assets/icon/twitter.png" alt="logo de Twitter" width="50"></a>
+</div>
+<div class="copyright">
+    <h5>Copyright ©2022 - Apple Case SL Store Argentino</h5>
+</div>
+<div class="contacto-apple">
+    <div class="whatsapp_apple">
+    <img src="../Assets/icon/whatsapp.png" alt="Logo de WhatsApp" width="35">
+    <h4 class="h4-whatsapp">095 056 552</h4>
+</div>
+    <div class="gmail_apple">
+    <img src="../Assets/icon/gmail.png" alt="Logo de E-mail" width="40">
+    <h4 class="h4-gmail">applecasesl@gmail.com</h4>
+</div>
+</div>
+</footer>
 
 <!-- JavaScript -->
 
 <script src="../JavaScript/products.js"></script>
+<script src="../JavaScript/app.js"></script>
 <script src="../JavaScript/buy.js"></script>
+
 
 
 </body>

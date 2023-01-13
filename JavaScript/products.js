@@ -1,4 +1,4 @@
-const products = [
+const productos = [
     {
         id: 1,
         img: '13ProMax-1.png',
@@ -6,6 +6,7 @@ const products = [
         name: 'iPhone 13 Pro Max',
         price: 1.499,
         text: '12 cuotas sin interes y envío a todo el país.',
+        cantidad: 1,
     },
 
     {
@@ -15,6 +16,7 @@ const products = [
         name: 'iPhone 13 Pro Max' ,
         price: 1.499,
         text: '12 cuotas sin interes y envío a todo el país.',
+        quantity: 1,
     },
 
     {
@@ -24,6 +26,7 @@ const products = [
         name: 'iPhone 12 Pro',
         price: 1.199,
         text: '12 cuotas sin interes y envío a todo el país.',
+        quantity: 1,
     },
 
     {
@@ -33,6 +36,7 @@ const products = [
         name: 'iPhone 12 Pro',
         price: 1.199,
         text: '12 cuotas sin interes y envío a todo el país.',
+        quantity: 1,
     },
 
     {
@@ -42,6 +46,7 @@ const products = [
         name: 'iPhone 12 Pro',
         price: 1.199,
         text: '12 cuotas sin interes y envío a todo el país.',
+        quantity: 1,
     },
 
     {
@@ -51,6 +56,7 @@ const products = [
         name: 'iPhone 13',
         price: 1.099,
         text: '12 cuotas sin interes y envío a todo el país.',
+        quantity: 1,
     },
 
     {
@@ -60,6 +66,7 @@ const products = [
         name: 'iPhone 13',
         price: 1.099,
         text: '12 cuotas sin interes y envío a todo el país.',
+        quantity: 1,
     },
 
     {
@@ -69,6 +76,7 @@ const products = [
         name: 'iPhone 13',
         price: 1.099,
         text: '12 cuotas sin interes y envío a todo el país.',
+        quantity: 1,
     },
 
     {
@@ -78,6 +86,7 @@ const products = [
         name: 'iPhone 13',
         price: 1.099,
         text: '12 cuotas sin interes y envío a todo el país.',
+        quantity: 1,
     },
 
     {
@@ -87,6 +96,7 @@ const products = [
         name: 'iPhone 13',
         price: 1.099,
         text: '12 cuotas sin interes y envío a todo el país.',
+        quantity: 1,
     },
 
     {
@@ -96,6 +106,7 @@ const products = [
         name: 'Case - iPhone 13',
         price: 99,
         text: '12 cuotas sin interes y envío a todo el país.',
+        quantity: 1,
     },
 
     {
@@ -105,6 +116,7 @@ const products = [
         name: 'Case - iPhone 13',
         price: 99,
         text: '12 cuotas sin interes y envío a todo el país.',
+        quantity: 1,
     },
 
     {
@@ -114,15 +126,17 @@ const products = [
         name: 'Case - iPhone 13',
         price: 99,
         text: '12 cuotas sin interes y envío a todo el país.',
+        quantity: 1,
     },
 
     {
         id: 14,
-        img: 'Prodct-4.png',
+        img: 'Product-4.png',
         store: 'AppleCase SL',
         name: 'iPhone 13',
         price: 99,
         text: '12 cuotas sin interes y envío a todo el país.',
+        quantity: 1,
     },
 
     {
@@ -132,6 +146,7 @@ const products = [
         name: 'iPhone 13',
         price: 99,
         text: '12 cuotas sin interes y envío a todo el país.',
+        quantity: 1,
     },
     
 ];

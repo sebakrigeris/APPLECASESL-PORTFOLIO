@@ -6,7 +6,7 @@ const productos = [
         name: 'iPhone 13 Pro Max',
         price: 1.499,
         text: '12 cuotas sin interes y envío a todo el país.',
-        cantidad: 1,
+        quantity: 1,
     },
 
     {

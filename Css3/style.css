@@ -21,6 +21,15 @@
   padding: 0;
   box-sizing: border-box; }
 
+.nav-toggle {
+  color: white;
+  background: none;
+  border: none;
+  font-size: 30px;
+  padding: 0px 20px;
+  line-height: 60px;
+  display: none; }
+
 /* NAV */
 .nav-index {
   width: 100%;
@@ -77,7 +86,7 @@
 
 .li-contact {
   position: relative;
-  left: 62rem;
+  left: 61rem;
   bottom: 10px; }
 
 .li-buy {
@@ -85,11 +94,18 @@
   border: none;
   position: relative;
   top: 15px;
-  left: 59rem; }
+  left: 62rem; }
 
 .contact-prod {
   position: relative;
-  left: 59rem; }
+  left: 62rem; }
+
+.li-carrito {
+  background: transparent;
+  border: none;
+  position: relative;
+  top: 15px;
+  left: 63rem; }
 
 .nav-location {
   width: 100%;
@@ -113,7 +129,7 @@
     margin-left: 40px;
     color: white;
     line-height: 0.8em; }
-  .content-apple .span-apple {
+  .content-apple .span-cuotas {
     color: white;
     background: linear-gradient(to left, #ADA996, #DBDBDB, #EAEAEA);
     -webkit-background-clip: text;
@@ -172,6 +188,13 @@
     position: relative;
     top: 90px; }
 
+.li-buy-index {
+  background: transparent;
+  border: none;
+  position: relative;
+  top: -5px;
+  left: 62rem; }
+
 .theme-darkap {
   background-color: #000000; }
   .theme-darkap .mac-h3 {
@@ -207,7 +230,8 @@
   background: linear-gradient(to right, black, #2c374e, #363941);
   display: flex;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  padding: 4px; }
   .footer-apple .redsocial {
     display: flex;
     flex-direction: row;
@@ -217,7 +241,7 @@
     width: 55px;
     transition: 0.3s; }
   .footer-apple img {
-    margin-left: 50px; }
+    margin-left: 40px; }
   .footer-apple .copyright h5 {
     font-size: 15px;
     font-family: "li-apple";
@@ -226,23 +250,10 @@
     color: white;
     text-transform: uppercase; }
   .footer-apple .contacto-apple {
-    display: flex;
-    justify-content: flex-end;
-    align-content: center;
-    flex-direction: column; }
-  .footer-apple .whatsapp_apple, .footer-apple .gmail_apple {
-    display: flex;
-    align-items: center;
-    color: white;
-    margin-right: 20px;
-    letter-spacing: 1px; }
-    .footer-apple .whatsapp_apple .h4-whatsapp, .footer-apple .whatsapp_apple .h4-gmail, .footer-apple .gmail_apple .h4-whatsapp, .footer-apple .gmail_apple .h4-gmail {
-      font-size: 18px;
-      font-family: "li-apple";
-      margin-top: 7px; }
-    .footer-apple .whatsapp_apple img, .footer-apple .gmail_apple img {
-      margin-top: 7px;
-      margin-right: 12px; }
+    display: flex; }
+  .footer-apple img {
+    margin-top: 5px;
+    margin-right: 20px; }
 
 /* PAGE PRODUCTS */
 .background-product {
@@ -320,7 +331,7 @@
   background-size: cover;
   color: white;
   position: fixed;
-  top: 8vh;
+  top: 9vh;
   overflow: auto;
   z-index: 9;
   scrollbar-color: none; }
@@ -330,19 +341,36 @@
     width: 150px; }
   .modal-container .modal-header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: white;
     color: black;
     width: 100%; }
   .modal-container .modal-header-tittle {
-    justify-self: start; }
+    justify-self: start;
+    font-family: 'roboto';
+    margin-left: 20px; }
   .modal-container .modal-content {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    border: 1px solid white;
-    border-radius: 0.5rem; }
+    font-family: 'roboto';
+    border: 1px solid #959494; }
+  .modal-container .modal-header-button img {
+    width: 60px;
+    margin-top: 7px;
+    margin-right: 20px;
+    padding: 5px; }
+  .modal-container .total-content {
+    width: 40%;
+    text-align: center;
+    font-family: 'roboto';
+    text-transform: uppercase;
+    padding: 10px;
+    margin: 10px;
+    background: white;
+    color: black;
+    border-radius: 2rem; }
 
 /*CONTADOR DE CANTIDAD */
 .cantidad-carrito {
@@ -430,13 +458,21 @@
 .footer-location {
   border-top-left-radius: 2rem;
   border-top-right-radius: 2rem;
-  margin: 30px 40px 0px 40px; }
+  margin: 30px 40px 0px 35px; }
 
 .back-c {
-  width: 100%;
-  height: 100vh;
-  background: url("../Assets/background/backgroundtotal2.png");
-  background-size: cover; }
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1; }
+
+.h2-contact {
+  font-size: 30px;
+  font-family: 'tittle--apple';
+  position: relative;
+  top: 8rem;
+  left: 5%;
+  color: white; }
 
 .contenedor-form {
   width: 30%;
@@ -446,9 +482,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 50px;
+  padding: 40px;
   position: absolute;
-  top: 8rem;
+  top: 7rem;
   right: 5rem; }
   .contenedor-form p {
     text-align: center;
@@ -457,25 +493,143 @@
     font-family: 'roboto'; }
   .contenedor-form input {
     width: 100%;
-    padding: 5px 30px;
-    margin-top: 15px; }
+    margin-top: 5px; }
   .contenedor-form textarea {
     width: 100%;
-    padding: 20px;
+    padding: -10px 10px;
     align-items: center;
-    margin-top: 15px; }
+    margin-top: 10px; }
   .contenedor-form button {
     width: 100%;
-    padding: 10px;
     position: relative;
-    top: 3rem;
-    left: 0.1rem;
-    font-size: 20px; }
+    top: 2rem;
+    padding: 5px;
+    font-size: 20px;
+    border: none;
+    transition: 0.1s; }
+  .contenedor-form button:hover {
+    background-color: #5e46b4;
+    color: white; }
 
 .footer-contact {
   border-top-left-radius: 2rem;
   border-top-right-radius: 2rem;
-  margin: 30px 40px 0px 40px;
+  margin: 0px 0px 0px 46px;
   position: absolute;
   bottom: 0;
   width: 95%; }
+
+@media only screen and (max-width: 576px) {
+  body {
+    max-width: 100% !important;
+    overflow-x: hidden !important; }
+  .nav-toggle {
+    display: block;
+    position: relative;
+    left: 18rem; }
+  .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
+    background-color: white; }
+  .hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner:after, .hamburger.is-active .hamburger-inner:before {
+    background-color: white; }
+  .nav-index {
+    height: 380px; }
+  .ul-apple {
+    margin-left: 0px !important;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    z-index: 9;
+    position: fixed;
+    top: 65px;
+    right: 0;
+    width: 100%;
+    padding: 20px 0;
+    height: calc(100% - 60px);
+    overflow-y: auto;
+    left: 100%;
+    transition: left 0.3s; }
+  .li-contact {
+    display: none;
+    position: fixed;
+    top: 12.5rem;
+    left: 14.7rem !important;
+    z-index: 9;
+    transition: left 0.3s; }
+  .li-buy-index {
+    display: none;
+    position: fixed;
+    top: 17rem;
+    left: 17.2rem !important;
+    z-index: 9;
+    transition: left 0.3s; }
+  .nav-menu_visible {
+    display: block;
+    left: 0; }
+  .img-apple img {
+    width: 189px;
+    margin-top: -18px;
+    margin-left: 2.5rem; }
+  .font-app h1 {
+    width: 80%;
+    margin-top: 20px;
+    font-size: 35px;
+    margin-left: 2rem; }
+  .font-app .span-cuotas {
+    font-size: 20px; }
+  .font-app .span-logo {
+    font-size: 23px; }
+  .font-app .btnimg {
+    font-size: 13px;
+    padding: 5px 15px;
+    margin-left: -1rem; }
+  .img-secundaria-apple {
+    height: 300px; }
+    .img-secundaria-apple img {
+      width: 300px;
+      margin-top: -24rem; }
+  .textosec_apple h2 {
+    font-size: 24px;
+    margin-bottom: -6.5rem; }
+  .textosec_apple span {
+    font-size: 25px; }
+  .textosec_apple button {
+    margin-bottom: -14rem;
+    font-size: 13px;
+    padding: 5px 15px; }
+  .theme-darkap {
+    height: 600px; }
+    .theme-darkap video {
+      position: absolute;
+      top: 48rem;
+      width: 100%; }
+    .theme-darkap .mac-h3 {
+      font-size: 50px;
+      top: 45rem;
+      left: 34%; }
+    .theme-darkap .mac-h4 {
+      font-size: 25px;
+      top: 48rem;
+      left: 15%; }
+    .theme-darkap .mac-h5 {
+      width: 90%;
+      font-size: 20px;
+      top: 70rem;
+      left: 5%; }
+  .footer-apple {
+    flex-direction: column;
+    padding-bottom: 0.5rem; }
+  .img-product {
+    width: 100%;
+    height: 270px;
+    background: url("../Assets/background/page-product576.jpg");
+    background-size: cover; }
+  .container-product {
+    grid-template-columns: repeat(2, auto);
+    justify-content: center;
+    gap: 1rem;
+    margin-left: 0;
+    margin-right: 0;
+    justify-items: center;
+    align-items: center; }
+    .container-product .card {
+      width: 250px; } }

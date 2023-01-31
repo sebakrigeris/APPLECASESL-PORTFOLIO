@@ -1,4 +1,4 @@
- 
+
 const verCarrito = () => { 
 
     modalContainer.innerHTML = "";
@@ -29,11 +29,11 @@ const verCarrito = () => {
 
     <img src="../Assets/img/${product.img}">
     <h4>${product.name}</h4>
-    <p>${product.price}</p>
+    <p>$ ${product.price}</p>
     <span class="restar"> - </span>
     <p>Cantidad: ${product.quantity}</p>
     <span class="sumar"> + </span>
-    <p>Total: ${product.quantity * product.price}</p>
+    <p>Total: $ ${product.quantity * product.price}</p>
     `;
 
     modalContainer.append(carritoContent);
@@ -67,7 +67,7 @@ const verCarrito = () => {
     
     const totalPrice = document.createElement("div");
     totalPrice.className = "total-content";
-    totalPrice.innerHTML = `total a pagar: ${total} $`;
+    totalPrice.innerHTML = `total a pagar: $ ${total}`;
 
     modalContainer.append(totalPrice);
 

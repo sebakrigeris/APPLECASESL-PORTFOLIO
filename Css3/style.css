@@ -93,19 +93,8 @@
   background: transparent;
   border: none;
   position: relative;
-  top: 15px;
+  top: -5px;
   left: 62rem; }
-
-.contact-prod {
-  position: relative;
-  left: 62rem; }
-
-.li-carrito {
-  background: transparent;
-  border: none;
-  position: relative;
-  top: 15px;
-  left: 63rem; }
 
 .nav-location {
   width: 100%;
@@ -188,20 +177,15 @@
     position: relative;
     top: 90px; }
 
-.li-buy-index {
-  background: transparent;
-  border: none;
-  position: relative;
-  top: -5px;
-  left: 62rem; }
-
 .theme-darkap {
   background-color: #000000; }
+  .theme-darkap video {
+    width: 100%; }
   .theme-darkap .mac-h3 {
     color: white;
     position: absolute;
-    top: 94rem;
-    left: 59%;
+    bottom: -100rem;
+    left: 27%;
     font-family: "Noto Sans KR", sans-serif;
     font-size: 100px; }
   .theme-darkap .mac-h4 {
@@ -211,10 +195,11 @@
     -webkit-text-fill-color: transparent;
     color: rgba(255, 255, 255, 0.778);
     position: absolute;
-    top: 103rem;
-    left: 54%;
+    bottom: -107rem;
+    left: 39%;
     font-family: "Noto Sans KR", sans-serif;
-    font-size: 35px; }
+    font-size: 45px;
+    font-weight: 600; }
   .theme-darkap .mac-h5 {
     width: 45%;
     color: white;
@@ -313,9 +298,11 @@
   .container-product .comprar {
     border: none;
     color: white;
-    background-color: black;
+    background: url("../Assets/background/backgroundtotal2.png");
+    background-size: cover;
     padding: 5px;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    border: 0.2px solid rgba(255, 255, 255, 0.405); }
 
 /* MODAL CONTAINER - PRODUCTS */
 .modal-container {
@@ -460,23 +447,30 @@
   border-top-right-radius: 2rem;
   margin: 30px 40px 0px 35px; }
 
+.back-contact {
+  background-color: black;
+  overflow-x: hidden !important; }
+
 .back-c {
-  position: fixed;
-  min-width: 100%;
-  min-height: 100%;
+  width: 80%;
+  max-height: 950px;
+  position: absolute;
+  top: 1.5rem;
+  left: -8rem;
   z-index: -1; }
 
 .h2-contact {
   font-size: 30px;
   font-family: 'tittle--apple';
   position: relative;
-  top: 8rem;
+  top: 4rem;
   left: 5%;
   color: white; }
 
 .contenedor-form {
   width: 30%;
   background: url("../Assets/background/backgroundtotal2.png");
+  background-size: auto;
   box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.4);
   color: white;
   display: flex;
@@ -493,7 +487,8 @@
     font-family: 'roboto'; }
   .contenedor-form input {
     width: 100%;
-    margin-top: 5px; }
+    margin-top: 5px;
+    padding: -15px; }
   .contenedor-form textarea {
     width: 100%;
     padding: -10px 10px;
@@ -518,6 +513,571 @@
   position: absolute;
   bottom: 0;
   width: 95%; }
+
+@media only screen and (max-width: 1400px) {
+  body {
+    max-width: 100% !important;
+    overflow-x: hidden !important; }
+  .nav-index {
+    height: 488px; }
+  .li-contact {
+    left: 32rem; }
+  .li-buy {
+    left: 34rem; }
+  .img-apple img {
+    width: 260px;
+    margin-top: -31px;
+    margin-left: 1rem; }
+  .font-app h1 {
+    width: 99%;
+    margin-top: 70px;
+    font-size: 70px;
+    margin-left: 1rem; }
+  .font-app .span-cuotas {
+    font-size: 35px; }
+  .font-app .span-logo {
+    font-size: 40px; }
+  .font-app .btnimg {
+    font-size: 19px;
+    padding: 5px 30px; }
+  .img-secundaria-apple {
+    height: 450px; }
+    .img-secundaria-apple img {
+      width: 470px;
+      margin-top: -31rem; }
+  .textosec_apple h2 {
+    font-size: 50px;
+    margin-bottom: -2rem; }
+  .textosec_apple span {
+    font-size: 37px; }
+  .textosec_apple button {
+    margin-bottom: -7rem;
+    font-size: 17px;
+    padding: 5px 25px; }
+  .theme-darkap {
+    height: 750px; }
+    .theme-darkap video {
+      position: absolute;
+      top: 61.2rem; }
+    .theme-darkap .mac-h3 {
+      font-size: 85px;
+      bottom: -56rem;
+      left: 23%; }
+    .theme-darkap .mac-h4 {
+      font-size: 50px;
+      bottom: -60.5rem;
+      left: 34%; }
+      .theme-darkap .mac-h4 img {
+        width: 65px; }
+  .footer-apple {
+    flex-direction: column;
+    padding-bottom: 0.5rem;
+    margin-top: 17.8rem; }
+  .img-product {
+    width: 100%;
+    height: 450px;
+    background: url("../Assets/background/page-product1400.jpg");
+    background-size: cover; }
+  .container-product {
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    gap: 1rem;
+    margin-left: 0;
+    margin-right: 0;
+    justify-items: center;
+    align-items: center; }
+    .container-product .card {
+      width: 300px; }
+  .footer-product {
+    margin-top: 40px; }
+  .nav-location {
+    height: 320px; }
+  .portada-location h4 {
+    font-size: 50px; }
+  .portada-location span {
+    font-size: 38px; }
+  .contenedor-ubicación {
+    margin-left: -1rem; }
+    .contenedor-ubicación .tamaño-ubi {
+      width: 100%; }
+    .contenedor-ubicación .border-ubi {
+      margin: 18px 19px 24px 37px;
+      padding: 5px; }
+    .contenedor-ubicación img {
+      width: 450px; }
+    .contenedor-ubicación .iframe-ubi {
+      width: 100%;
+      height: 550px;
+      margin-bottom: 20px; }
+  .footer-location {
+    margin-top: 20px; }
+  .back-c {
+    width: 700px;
+    left: -5rem;
+    top: 17rem; }
+  .h2-contact {
+    font-size: 20px;
+    top: 8rem; }
+  .contenedor-form {
+    width: 400px;
+    padding: 0px;
+    top: 9rem;
+    right: 2.4rem; }
+    .contenedor-form p {
+      font-size: 18px; }
+    .contenedor-form input {
+      width: 90%;
+      padding: 0;
+      background-color: transparent;
+      color: white;
+      border: none;
+      border-bottom: 1px solid white;
+      outline: none; }
+    .contenedor-form textarea {
+      width: 90%;
+      padding: -5px; }
+    .contenedor-form button {
+      padding: 0px;
+      top: 0rem; }
+  .footer-contact {
+    margin-top: 15rem !important;
+    bottom: -1rem;
+    left: -2.5rem; } }
+
+@media only screen and (max-width: 1200px) {
+  body {
+    max-width: 100% !important;
+    overflow-x: hidden !important; }
+  .nav-index {
+    height: 438px; }
+  .li-contact {
+    left: 21rem; }
+  .li-buy {
+    left: 22rem; }
+  .img-apple img {
+    width: 225px;
+    margin-top: -28px;
+    margin-left: 2rem; }
+  .font-app h1 {
+    width: 99%;
+    margin-top: 70px;
+    font-size: 63px;
+    margin-left: 1rem; }
+  .font-app .span-cuotas {
+    font-size: 32px; }
+  .font-app .span-logo {
+    font-size: 39px; }
+  .font-app .btnimg {
+    font-size: 17px;
+    padding: 5px 30px; }
+  .img-secundaria-apple {
+    height: 400px; }
+    .img-secundaria-apple img {
+      width: 440px;
+      margin-top: -30rem; }
+  .textosec_apple h2 {
+    font-size: 41px;
+    margin-bottom: -2rem; }
+  .textosec_apple span {
+    font-size: 35px; }
+  .textosec_apple button {
+    margin-bottom: -7rem;
+    font-size: 15px;
+    padding: 5px 25px; }
+  .theme-darkap {
+    height: 700px; }
+    .theme-darkap video {
+      position: absolute;
+      top: 54rem; }
+    .theme-darkap .mac-h3 {
+      font-size: 73px;
+      bottom: -43rem;
+      left: 23%; }
+    .theme-darkap .mac-h4 {
+      font-size: 50px;
+      bottom: -48rem;
+      left: 31.4%; }
+      .theme-darkap .mac-h4 img {
+        width: 65px; }
+  .footer-apple {
+    flex-direction: column;
+    padding-bottom: 0.5rem;
+    margin-top: 11.2rem; }
+  .img-product {
+    width: 100%;
+    height: 400px;
+    background: url("../Assets/background/page-product1200.jpg");
+    background-size: cover; }
+  .container-product {
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    gap: 1rem;
+    margin-left: 0;
+    margin-right: 0;
+    justify-items: center;
+    align-items: center; }
+    .container-product .card {
+      width: 300px; }
+  .footer-product {
+    margin-top: 40px; }
+  .nav-location {
+    height: 320px; }
+  .portada-location h4 {
+    font-size: 50px; }
+  .portada-location span {
+    font-size: 38px; }
+  .contenedor-ubicación {
+    margin-left: -1rem; }
+    .contenedor-ubicación .tamaño-ubi {
+      width: 100%; }
+    .contenedor-ubicación .border-ubi {
+      margin: 18px 19px 24px 37px;
+      padding: 5px; }
+    .contenedor-ubicación img {
+      width: 450px; }
+    .contenedor-ubicación .iframe-ubi {
+      width: 100%;
+      height: 550px;
+      margin-bottom: 20px; }
+  .footer-location {
+    margin-top: 20px; }
+  .back-c {
+    width: 700px;
+    left: -5rem;
+    top: 17rem; }
+  .h2-contact {
+    font-size: 20px;
+    top: 8rem; }
+  .contenedor-form {
+    width: 400px;
+    padding: 0px;
+    top: 9rem;
+    right: 2.4rem; }
+    .contenedor-form p {
+      font-size: 18px; }
+    .contenedor-form input {
+      width: 90%;
+      padding: 0;
+      background-color: transparent;
+      color: white;
+      border: none;
+      border-bottom: 1px solid white;
+      outline: none; }
+    .contenedor-form textarea {
+      width: 90%;
+      padding: -5px; }
+    .contenedor-form button {
+      padding: 0px;
+      top: 0rem; }
+  .footer-contact {
+    margin-top: 15rem !important;
+    bottom: -1rem;
+    left: -2.5rem; } }
+
+@media only screen and (max-width: 992px) {
+  body {
+    max-width: 100% !important;
+    overflow-x: hidden !important; }
+  .nav-index {
+    height: 438px; }
+  .li-contact {
+    left: 13rem; }
+  .li-buy {
+    left: 11.5rem; }
+  .img-apple img {
+    width: 218px;
+    margin-top: -18px;
+    margin-left: 3.5rem; }
+  .font-app h1 {
+    width: 99%;
+    margin-top: 80px;
+    font-size: 50px;
+    margin-left: 0.5rem; }
+  .font-app .span-cuotas {
+    font-size: 25px; }
+  .font-app .span-logo {
+    font-size: 27px; }
+  .font-app .btnimg {
+    font-size: 13px;
+    padding: 5px 30px; }
+  .img-secundaria-apple {
+    height: 400px; }
+    .img-secundaria-apple img {
+      width: 370px;
+      margin-top: -34rem; }
+  .textosec_apple h2 {
+    font-size: 33px;
+    margin-bottom: -2rem; }
+  .textosec_apple span {
+    font-size: 30px; }
+  .textosec_apple button {
+    margin-bottom: -7rem;
+    font-size: 13px;
+    padding: 5px 25px; }
+  .theme-darkap {
+    height: 650px; }
+    .theme-darkap video {
+      position: absolute;
+      top: 49rem; }
+    .theme-darkap .mac-h3 {
+      font-size: 65px;
+      bottom: -30rem;
+      left: 21%; }
+    .theme-darkap .mac-h4 {
+      font-size: 45px;
+      bottom: -34rem;
+      left: 31.3%; }
+      .theme-darkap .mac-h4 img {
+        width: 65px; }
+    .theme-darkap .mac-h5 {
+      width: 90%;
+      font-size: 20px;
+      top: 81rem;
+      left: 5%; }
+  .footer-apple {
+    flex-direction: column;
+    padding-bottom: 0.5rem;
+    margin-top: 0px; }
+  .img-product {
+    width: 100%;
+    height: 380px;
+    background: url("../Assets/background/page-product992.jpg");
+    background-size: cover; }
+  .container-product {
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    gap: 1rem;
+    margin-left: 0;
+    margin-right: 0;
+    justify-items: center;
+    align-items: center; }
+    .container-product .card {
+      width: 300px; }
+  .footer-product {
+    margin-top: 40px; }
+  .nav-location {
+    height: 270px; }
+  .portada-location h4 {
+    font-size: 38px; }
+  .portada-location span {
+    font-size: 35px; }
+  .contenedor-ubicación {
+    margin-left: -1rem; }
+    .contenedor-ubicación .tamaño-ubi {
+      width: 100%; }
+    .contenedor-ubicación .border-ubi {
+      margin: 18px 19px 24px 37px;
+      padding: 5px; }
+    .contenedor-ubicación img {
+      width: 450px; }
+    .contenedor-ubicación .iframe-ubi {
+      width: 100%;
+      height: 550px;
+      margin-bottom: 20px; }
+  .footer-location {
+    margin-top: 20px; }
+  .back-c {
+    width: 700px;
+    left: -5rem;
+    top: 17rem; }
+  .h2-contact {
+    font-size: 20px;
+    top: 8rem; }
+  .contenedor-form {
+    width: 400px;
+    padding: 0px;
+    top: 9rem;
+    right: 2.4rem; }
+    .contenedor-form p {
+      font-size: 18px; }
+    .contenedor-form input {
+      width: 90%;
+      padding: 0;
+      background-color: transparent;
+      color: white;
+      border: none;
+      border-bottom: 1px solid white;
+      outline: none; }
+    .contenedor-form textarea {
+      width: 90%;
+      padding: -5px; }
+    .contenedor-form button {
+      padding: 0px;
+      top: 0rem; }
+  .footer-contact {
+    margin-top: 15rem !important;
+    bottom: -1rem;
+    left: -2.5rem; } }
+
+@media only screen and (max-width: 768px) {
+  body {
+    max-width: 100% !important;
+    overflow-x: hidden !important; }
+  .nav-toggle {
+    display: block;
+    position: relative;
+    left: 28rem; }
+  .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
+    background-color: white; }
+  .hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner:after, .hamburger.is-active .hamburger-inner:before {
+    background-color: white; }
+  .nav-index {
+    height: 410px; }
+  .ul-apple {
+    margin-left: 0px !important;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    z-index: 9;
+    position: fixed;
+    top: 65px;
+    right: 0;
+    width: 100%;
+    padding: 20px 0;
+    height: calc(100% - 60px);
+    overflow-y: auto;
+    left: 100%;
+    transition: left 0.3s; }
+  .li-contact {
+    display: none;
+    position: fixed;
+    top: 12.5rem;
+    left: 20.6rem !important;
+    z-index: 9;
+    transition: left 0.3s; }
+  .li-buy {
+    display: none;
+    position: fixed;
+    top: 17rem;
+    left: 23rem !important;
+    z-index: 9;
+    transition: left 0.3s; }
+  .nav-menu_visible {
+    display: block;
+    left: 0; }
+  .img-apple img {
+    width: 208px;
+    margin-top: -18px;
+    margin-left: 3.5rem; }
+  .font-app h1 {
+    width: 95%;
+    margin-top: 20px;
+    font-size: 50px;
+    margin-left: 0.5rem; }
+  .font-app .span-cuotas {
+    font-size: 25px; }
+  .font-app .span-logo {
+    font-size: 27px; }
+  .font-app .btnimg {
+    font-size: 13px;
+    padding: 5px 25px;
+    margin-left: -1rem; }
+  .img-secundaria-apple {
+    height: 300px; }
+    .img-secundaria-apple img {
+      width: 350px;
+      margin-top: -26rem; }
+  .textosec_apple h2 {
+    font-size: 27px;
+    margin-bottom: -6.5rem; }
+  .textosec_apple span {
+    font-size: 25px; }
+  .textosec_apple button {
+    margin-bottom: -14rem;
+    font-size: 13px;
+    padding: 5px 15px; }
+  .theme-darkap {
+    height: 620px; }
+    .theme-darkap video {
+      position: absolute;
+      top: 49rem; }
+    .theme-darkap .mac-h3 {
+      font-size: 45px;
+      bottom: -21rem;
+      left: 24%; }
+    .theme-darkap .mac-h4 {
+      font-size: 30px;
+      bottom: -26rem;
+      left: 31.3%; }
+      .theme-darkap .mac-h4 img {
+        width: 60px; }
+    .theme-darkap .mac-h5 {
+      width: 90%;
+      font-size: 20px;
+      top: 81rem;
+      left: 5%; }
+  .footer-apple {
+    flex-direction: column;
+    padding-bottom: 0.5rem;
+    margin-top: 0px; }
+  .img-product {
+    width: 100%;
+    height: 310px;
+    background: url("../Assets/background/page-product768.jpg");
+    background-size: cover; }
+  .container-product {
+    grid-template-columns: repeat(2, auto);
+    justify-content: center;
+    gap: 1rem;
+    margin-left: 0;
+    margin-right: 0;
+    justify-items: center;
+    align-items: center; }
+    .container-product .card {
+      width: 300px; }
+  .footer-product {
+    margin-top: 40px; }
+  .nav-location {
+    height: 270px; }
+  .portada-location h4 {
+    font-size: 38px; }
+  .portada-location span {
+    font-size: 35px; }
+  .contenedor-ubicación {
+    flex-direction: column; }
+    .contenedor-ubicación .tamaño-ubi {
+      width: 100%; }
+    .contenedor-ubicación .border-ubi {
+      margin: 18px 21px 24px 37px;
+      padding: 5px; }
+    .contenedor-ubicación img {
+      width: 450px; }
+    .contenedor-ubicación .iframe-ubi {
+      width: 90%;
+      margin: 20px 0px 20px 17px; }
+  .footer-location {
+    margin-top: 15px; }
+  .back-c {
+    width: 700px;
+    left: -3rem;
+    top: 6rem; }
+  .h2-contact {
+    font-size: 20px;
+    top: 3rem; }
+  .contenedor-form {
+    width: 400px;
+    padding: 0px;
+    top: 30rem; }
+    .contenedor-form p {
+      font-size: 18px; }
+    .contenedor-form input {
+      width: 90%;
+      padding: 0;
+      background-color: transparent;
+      color: white;
+      border: none;
+      border-bottom: 1px solid white;
+      outline: none; }
+    .contenedor-form textarea {
+      width: 90%;
+      padding: -5px; }
+    .contenedor-form button {
+      padding: 0px;
+      top: 0rem; }
+  .footer-contact {
+    margin-top: 15rem !important;
+    bottom: -10rem;
+    left: -2.5rem; } }
 
 @media only screen and (max-width: 576px) {
   body {
@@ -555,7 +1115,7 @@
     left: 14.7rem !important;
     z-index: 9;
     transition: left 0.3s; }
-  .li-buy-index {
+  .li-buy {
     display: none;
     position: fixed;
     top: 17rem;
@@ -597,19 +1157,20 @@
     font-size: 13px;
     padding: 5px 15px; }
   .theme-darkap {
-    height: 600px; }
+    height: 390px; }
     .theme-darkap video {
       position: absolute;
-      top: 48rem;
-      width: 100%; }
+      top: 48rem; }
     .theme-darkap .mac-h3 {
-      font-size: 50px;
-      top: 45rem;
-      left: 34%; }
+      font-size: 35px;
+      bottom: -15rem;
+      left: 23%; }
     .theme-darkap .mac-h4 {
       font-size: 25px;
-      top: 48rem;
-      left: 15%; }
+      bottom: -17.7rem;
+      left: 31.3%; }
+      .theme-darkap .mac-h4 img {
+        width: 40px; }
     .theme-darkap .mac-h5 {
       width: 90%;
       font-size: 20px;
@@ -617,7 +1178,8 @@
       left: 5%; }
   .footer-apple {
     flex-direction: column;
-    padding-bottom: 0.5rem; }
+    padding-bottom: 0.5rem;
+    margin-top: 107px; }
   .img-product {
     width: 100%;
     height: 270px;
@@ -632,4 +1194,58 @@
     justify-items: center;
     align-items: center; }
     .container-product .card {
-      width: 250px; } }
+      width: 250px; }
+  .footer-product {
+    margin-top: 40px; }
+  .nav-location {
+    height: 270px; }
+  .portada-location h4 {
+    font-size: 38px; }
+  .portada-location span {
+    font-size: 35px; }
+  .contenedor-ubicación {
+    flex-direction: column; }
+    .contenedor-ubicación .tamaño-ubi {
+      width: 100%; }
+    .contenedor-ubicación .border-ubi {
+      margin: 18px 21px 24px 37px;
+      padding: 5px; }
+    .contenedor-ubicación img {
+      width: 400px; }
+    .contenedor-ubicación .iframe-ubi {
+      width: 90%;
+      height: 300px;
+      margin: 20px 0px -10px 17px; }
+  .footer-location {
+    margin-top: 40px; }
+  .back-c {
+    width: 700px;
+    left: -3rem;
+    top: 6rem; }
+  .h2-contact {
+    font-size: 20px;
+    top: 3rem; }
+  .contenedor-form {
+    width: 400px;
+    padding: 0px;
+    top: 30rem; }
+    .contenedor-form p {
+      font-size: 18px; }
+    .contenedor-form input {
+      width: 90%;
+      padding: 0;
+      background-color: transparent;
+      color: white;
+      border: none;
+      border-bottom: 1px solid white;
+      outline: none; }
+    .contenedor-form textarea {
+      width: 90%;
+      padding: -5px; }
+    .contenedor-form button {
+      padding: 0px;
+      top: 0rem; }
+  .footer-contact {
+    margin-top: 15rem !important;
+    bottom: -10rem;
+    left: -2.5rem; } }

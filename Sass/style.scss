@@ -125,41 +125,24 @@ a:hover:after {
     background: transparent;
     border: none;
     position: relative;
-    top: 15px;
+    top: -5px;
     left: 62rem;
 }
 
-// CONTACTO PRODUCTOS 
 
-.contact-prod {
-    position: relative;
-    left: 62rem;
-}
+// // CONTACTO PRODUCTOS 
 
-.li-carrito {
-    background: transparent;
-    border: none;
-    position: relative;
-    top: 15px;
-    left: 63rem;
-}
+// .contact-prod {
+//     position: relative;
+//     top: -0.6rem;
+//     left: 62rem;
+// }
 
-// // CARRITO LOCATION
 // .li-carrito {
 //     background: transparent;
 //     border: none;
 //     position: relative;
-//     top: 15px;
-//     left: 63rem;
-// }
-
-// // CARRITO CONTACT
-
-// .li-buy-contact {
-//     background: transparent;
-//     border: none;
-//     position: relative;
-//     top: 15px;
+//     top: -0.3rem;
 //     left: 63rem;
 // }
 
@@ -284,13 +267,7 @@ a:hover:after {
 
 // CARRITO INDEX
 
-.li-buy-index {
-    background: transparent;
-    border: none;
-    position: relative;
-    top: -5px;
-    left: 62rem;
-}
+
 
 // VIDEO MAC
 
@@ -298,12 +275,16 @@ a:hover:after {
 .theme-darkap {
 background-color: #000000;
 
+video {
+    width: 100%;
+}
+
 
 .mac-h3 {
 color: white;
 position: absolute;
-top: 94rem;
-left: 59%;
+bottom: -100rem;
+left: 27%;
 font-family: $fuente-apple;
 font-size: 100px;
 }
@@ -315,10 +296,12 @@ font-size: 100px;
     -webkit-text-fill-color: transparent;
     color: rgba(255, 255, 255, 0.778);
     position: absolute;
-    top: 103rem;
-    left: 54%;
+    bottom: -107rem;
+    left: 39%;
     font-family: $fuente-apple;
-    font-size: 35px;
+    font-size: 45px;
+    
+    font-weight: 600;
 }
 
 .mac-h5 {
@@ -454,9 +437,11 @@ img {
     .comprar{
         border: none;
         color: white;
-        background-color: black;
+        background: url("../Assets/background/backgroundtotal2.png");
+        background-size: cover;
         padding: 5px;
         text-transform: uppercase;
+        border: 0.2px solid rgba(255, 255, 255, 0.405);
     }
 }
 
@@ -666,15 +651,21 @@ span {
 
 //  PAGE CONTACT
 
+.back-contact {
+    background-color: rgb(0, 0, 0);
+    overflow-x: hidden !important;
+}
+
 .back-c {
-    position: fixed;
-
-    min-width: 100%;
-    min-height: 100%;
-
-    z-index: -1;
+    width: 80%;
+    max-height: 950px;
 
     
+    
+    position: absolute;
+    top: 1.5rem;
+    left: -8rem;
+    z-index: -1;
 }
 
 
@@ -682,7 +673,7 @@ span {
     font-size: 30px;
     font-family: 'tittle--apple';
     position: relative;
-    top: 8rem;
+    top: 4rem;
     left: 5%;
 
     color: white;
@@ -696,6 +687,7 @@ span {
 .contenedor-form {
     width: 30%;
     background: url("../Assets/background/backgroundtotal2.png");
+    background-size: auto;
     box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.4);
     color: white;
     display: flex;
@@ -721,6 +713,8 @@ span {
     input {
         width: 100%;
         margin-top: 5px; 
+        padding: -15px;
+        
     }
 
     textarea {
@@ -767,6 +761,1060 @@ span {
 
 // MEDIA QUERYS
 
+@media only screen and (max-width: 1400px) {
+
+    body {
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
+
+    // // BACKGROUND NAV
+
+    .nav-index {
+        height: 488px;
+    }
+
+
+    .li-contact {
+        left: 32rem; 
+
+    }
+
+    .li-buy {
+        left: 34rem;
+    }
+
+    //IMG DEL NAV & FONTS ()
+
+    .img-apple {
+        img {
+            width: 260px;
+        margin-top: -31px;
+        margin-left: 1rem;
+    }
+
+    }
+    
+    .font-app {
+        
+        h1{
+            width: 99%;
+            margin-top: 70px;
+            font-size: 70px;
+            margin-left: 1rem;
+        }
+        .span-cuotas {
+            font-size: 35px;
+        }
+        .span-logo {
+            font-size:  40px;
+        }
+        .btnimg {
+            font-size: 19px;
+            padding: 5px 30px;
+            
+        }
+        
+    }
+
+
+    // CONTENIDO SECUNDARIO INDEX 
+
+    .img-secundaria-apple {
+        height: 450px;
+        img {
+            width: 470px;
+            margin-top: -31rem;
+        }
+    }
+    .textosec_apple {
+        
+        h2 {
+            font-size: 50px;
+            margin-bottom: -2rem;
+        }
+        span{
+            font-size: 37px;
+        }
+        button {
+            margin-bottom: -7rem;
+            font-size: 17px;
+            padding: 5px 25px;
+        }
+    }
+
+    // VIDEO INDEX 
+    .theme-darkap {
+    height: 750px;
+    
+    video {
+        position: absolute;
+        top: 61.2rem;
+    }
+
+        .mac-h3 {
+            font-size: 85px;
+            bottom: -56rem;
+            left: 23%;
+        }
+        .mac-h4{
+            font-size: 50px;
+            bottom: -60.5rem;
+            left: 34%;
+
+            img {
+            width: 65px;
+            }
+        }
+    
+    }
+    
+    // FOOTER ALL
+
+    .footer-apple {
+        flex-direction: column;
+        padding-bottom: 0.5rem;
+        margin-top: 17.8rem;
+    }
+    
+    // PAGE PRODUCTOS
+
+    .img-product {
+        width: 100%;
+        height: 450px;
+        background: url("../Assets/background/page-product1400.jpg");
+        background-size: cover;
+    }
+
+    .container-product {
+        grid-template-columns: repeat(3, auto);
+        justify-content: center;
+        gap: 1rem;
+
+        margin-left: 0;
+        margin-right: 0;
+        
+        justify-items: center;
+        align-items: center;
+        
+        .card {
+            width: 300px;
+        }
+    }
+
+    .footer-product {
+        margin-top: 40px;
+    }
+
+    // PAGE LOCATION
+
+    .nav-location {
+        height: 320px;
+    }
+
+    .portada-location {
+    
+            h4 {
+                font-size: 50px;
+            }
+            span {
+                font-size: 38px;
+                
+            }
+    }
+
+    .contenedor-ubicación {
+        margin-left: -1rem;
+        
+        .tamaño-ubi {
+            width: 100%;
+        }
+
+        .border-ubi {
+            margin: 18px 19px 24px 37px;
+            padding: 5px;
+        }
+
+        img {
+            width: 450px;
+        }
+
+        .iframe-ubi {
+            width: 100%;
+            height: 550px;
+            margin-bottom: 20px;
+        }
+    }
+
+    .footer-location {
+        margin-top: 20px;
+    }
+
+    // PAGE CONTACT
+
+    .back-c {
+        width: 700px;
+        left: -5rem;
+        top: 17rem;
+    }
+
+
+    .h2-contact {
+        font-size: 20px;
+        top: 8rem;
+    }
+
+
+    .contenedor-form {
+        width: 400px;
+        padding: 0px;
+
+        top: 9rem;
+        right: 2.4rem;
+        
+    
+        p {
+            font-size: 18px;
+        }
+        input {
+            width: 90%;
+            padding: 0;
+            background-color: transparent;
+            
+            color: white;
+
+            border: none;
+            border-bottom: 1px solid rgb(255, 255, 255);
+            outline: none;
+            
+        }
+        textarea {
+            width: 90%;
+            padding: -5px;
+        }
+        button {
+            padding: 0px;
+            top: 0rem;
+        }
+    }
+    
+    .footer-contact {
+        margin-top: 15rem !important;
+        bottom: -1rem;
+        left: -2.5rem;
+        
+    }
+
+}
+
+
+
+@media only screen and (max-width: 1200px) {
+
+    body {
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
+
+    // // BACKGROUND NAV
+
+    .nav-index {
+        height: 438px;
+    }
+
+
+    .li-contact {
+        left: 21rem; 
+
+    }
+
+    .li-buy {
+        left: 22rem;
+    }
+
+    //IMG DEL NAV & FONTS ()
+
+    .img-apple {
+        img {
+            width: 225px;
+        margin-top: -28px;
+        margin-left: 2rem;
+    }
+
+    }
+    
+    .font-app {
+        
+        h1{
+            width: 99%;
+            margin-top: 70px;
+            font-size: 63px;
+            margin-left: 1rem;
+        }
+        .span-cuotas {
+            font-size: 32px;
+        }
+        .span-logo {
+            font-size:  39px;
+        }
+        .btnimg {
+            font-size: 17px;
+            padding: 5px 30px;
+            
+        }
+        
+    }
+
+
+    // CONTENIDO SECUNDARIO INDEX 
+
+    .img-secundaria-apple {
+        height: 400px;
+        img {
+            width: 440px;
+            margin-top: -30rem;
+        }
+    }
+    .textosec_apple {
+        
+        h2 {
+            font-size: 41px;
+            margin-bottom: -2rem;
+        }
+        span{
+            font-size: 35px;
+        }
+        button {
+            margin-bottom: -7rem;
+            font-size: 15px;
+            padding: 5px 25px;
+        }
+    }
+
+    // VIDEO INDEX 
+    .theme-darkap {
+    height: 700px;
+    
+    video {
+        position: absolute;
+        top: 54rem;
+    }
+
+        .mac-h3 {
+            font-size: 73px;
+            bottom: -43rem;
+            left: 23%;
+        }
+        .mac-h4{
+            font-size: 50px;
+            bottom: -48rem;
+            left: 31.4%;
+
+            img {
+            width: 65px;
+            }
+        }
+    
+    }
+    
+    // FOOTER ALL
+
+    .footer-apple {
+        flex-direction: column;
+        padding-bottom: 0.5rem;
+        margin-top: 11.2rem;
+    }
+    
+    // PAGE PRODUCTOS
+
+    .img-product {
+        width: 100%;
+        height: 400px;
+        background: url("../Assets/background/page-product1200.jpg");
+        background-size: cover;
+    }
+
+    .container-product {
+        grid-template-columns: repeat(3, auto);
+        justify-content: center;
+        gap: 1rem;
+
+        margin-left: 0;
+        margin-right: 0;
+        
+        justify-items: center;
+        align-items: center;
+        
+        .card {
+            width: 300px;
+        }
+    }
+
+    .footer-product {
+        margin-top: 40px;
+    }
+
+    // PAGE LOCATION
+
+    .nav-location {
+        height: 320px;
+    }
+
+    .portada-location {
+    
+            h4 {
+                font-size: 50px;
+            }
+            span {
+                font-size: 38px;
+                
+            }
+    }
+
+    .contenedor-ubicación {
+        margin-left: -1rem;
+        
+        .tamaño-ubi {
+            width: 100%;
+        }
+
+        .border-ubi {
+            margin: 18px 19px 24px 37px;
+            padding: 5px;
+        }
+
+        img {
+            width: 450px;
+        }
+
+        .iframe-ubi {
+            width: 100%;
+            height: 550px;
+            margin-bottom: 20px;
+        }
+    }
+
+    .footer-location {
+        margin-top: 20px;
+    }
+
+    // PAGE CONTACT
+
+    .back-c {
+        width: 700px;
+        left: -5rem;
+        top: 17rem;
+    }
+
+
+    .h2-contact {
+        font-size: 20px;
+        top: 8rem;
+    }
+
+
+    .contenedor-form {
+        width: 400px;
+        padding: 0px;
+
+        top: 9rem;
+        right: 2.4rem;
+        
+    
+        p {
+            font-size: 18px;
+        }
+        input {
+            width: 90%;
+            padding: 0;
+            background-color: transparent;
+            
+            color: white;
+
+            border: none;
+            border-bottom: 1px solid rgb(255, 255, 255);
+            outline: none;
+            
+        }
+        textarea {
+            width: 90%;
+            padding: -5px;
+        }
+        button {
+            padding: 0px;
+            top: 0rem;
+        }
+    }
+    
+    .footer-contact {
+        margin-top: 15rem !important;
+        bottom: -1rem;
+        left: -2.5rem;
+        
+    }
+}
+
+
+@media only screen and (max-width: 992px) {
+
+    body {
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
+
+    // // BACKGROUND NAV
+
+    .nav-index {
+        height: 438px;
+    }
+
+
+    .li-contact {
+        left: 13rem; 
+
+    }
+
+    .li-buy {
+        left: 11.5rem;
+    }
+
+    //IMG DEL NAV & FONTS ()
+
+    .img-apple {
+        img {
+            width: 218px;
+        margin-top: -18px;
+        margin-left: 3.5rem;
+    }
+
+    }
+    
+    .font-app {
+        
+        h1{
+            width: 99%;
+            margin-top: 80px;
+            font-size: 50px;
+            margin-left: 0.5rem;
+        }
+        .span-cuotas {
+            font-size: 25px;
+        }
+        .span-logo {
+            font-size: 27px;
+        }
+        .btnimg {
+            font-size: 13px;
+            padding: 5px 30px;
+            
+        }
+        
+    }
+
+
+    // CONTENIDO SECUNDARIO INDEX 
+
+    .img-secundaria-apple {
+        height: 400px;
+        img {
+            width: 370px;
+            margin-top: -34rem;
+        }
+    }
+    .textosec_apple {
+        
+        h2 {
+            font-size: 33px;
+            margin-bottom: -2rem;
+        }
+        span{
+            font-size: 30px;
+        }
+        button {
+            margin-bottom: -7rem;
+            font-size: 13px;
+            padding: 5px 25px;
+        }
+    }
+
+    // VIDEO INDEX 
+    .theme-darkap {
+    height: 650px;
+    
+    video {
+        position: absolute;
+        top: 49rem;
+    }
+
+        .mac-h3 {
+            font-size: 65px;
+            bottom: -30rem;
+            left: 21%;
+        }
+        .mac-h4{
+            font-size: 45px;
+            bottom: -34rem;
+            left: 31.3%;
+
+            img {
+            width: 65px;
+            }
+        }
+    
+        .mac-h5 {
+            width: 90%;
+            font-size: 20px;
+            top: 81rem;
+            left: 5%;
+        }
+    }
+    
+    // FOOTER ALL
+
+    .footer-apple {
+        flex-direction: column;
+        padding-bottom: 0.5rem;
+        margin-top: 0px;
+    }
+    
+    // PAGE PRODUCTOS
+
+    .img-product {
+        width: 100%;
+        height: 380px;
+        background: url("../Assets/background/page-product992.jpg");
+        background-size: cover;
+    }
+
+    .container-product {
+        grid-template-columns: repeat(3, auto);
+        justify-content: center;
+        gap: 1rem;
+
+        margin-left: 0;
+        margin-right: 0;
+        
+        justify-items: center;
+        align-items: center;
+        
+        .card {
+            width: 300px;
+        }
+    }
+
+    .footer-product {
+        margin-top: 40px;
+    }
+
+    // PAGE LOCATION
+
+    .nav-location {
+        height: 270px;
+    }
+
+    .portada-location {
+    
+            h4 {
+                font-size: 38px;
+            }
+            span {
+                font-size: 35px;
+            }
+    }
+
+    .contenedor-ubicación {
+        margin-left: -1rem;
+        
+        .tamaño-ubi {
+            width: 100%;
+        }
+
+        .border-ubi {
+            margin: 18px 19px 24px 37px;
+            padding: 5px;
+        }
+
+        img {
+            width: 450px;
+        }
+
+        .iframe-ubi {
+            width: 100%;
+            height: 550px;
+            margin-bottom: 20px;
+        }
+    }
+
+    .footer-location {
+        margin-top: 20px;
+    }
+
+    // PAGE CONTACT
+
+    .back-c {
+        width: 700px;
+        left: -5rem;
+        top: 17rem;
+    }
+
+
+    .h2-contact {
+        font-size: 20px;
+        top: 8rem;
+    }
+
+
+    .contenedor-form {
+        width: 400px;
+        padding: 0px;
+
+        top: 9rem;
+        right: 2.4rem;
+        
+    
+        p {
+            font-size: 18px;
+        }
+        input {
+            width: 90%;
+            padding: 0;
+            background-color: transparent;
+            
+            color: white;
+
+            border: none;
+            border-bottom: 1px solid rgb(255, 255, 255);
+            outline: none;
+            
+        }
+        textarea {
+            width: 90%;
+            padding: -5px;
+        }
+        button {
+            padding: 0px;
+            top: 0rem;
+        }
+    }
+    
+    .footer-contact {
+        margin-top: 15rem !important;
+        bottom: -1rem;
+        left: -2.5rem;
+        
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    body {
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
+
+    // PAGE INDEX
+
+    // NAV BURGER INDEX ( HACER TODAS LAS PAGE) 
+
+    .nav-toggle {
+        display: block;
+        position: relative;
+        left: 28rem;
+    }   
+
+    .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
+        background-color: white;
+    }
+
+    .hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner:after, .hamburger.is-active .hamburger-inner:before {
+        background-color: white;
+    }
+
+    // BACKGROUND NAV
+
+    .nav-index {
+        height: 410px;
+    }
+
+    .ul-apple {
+        margin-left: 0px !important;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(0, 0, 0);
+        z-index: 9;
+        position: fixed;
+        top: 65px;
+        right: 0;
+        width: 100%;
+        padding: 20px 0;
+
+        height: calc(100% - 60px);
+        overflow-y: auto;
+
+        left: 100%;
+        transition: left 0.3s;
+    }
+
+    .li-contact {
+        display: none;
+        position: fixed;
+        top: 12.5rem;
+        left: 20.6rem !important;
+
+        z-index: 9;
+
+        transition: left 0.3s;
+        
+    }
+
+    .li-buy {
+        display: none;
+        position: fixed;
+        top: 17rem;
+        left: 23rem !important;
+
+        z-index: 9;  
+
+        transition: left 0.3s;
+    }
+
+    .nav-menu_visible {
+        display: block;
+        left: 0;
+        
+    }
+
+    //IMG DEL NAV & FONTS ()
+
+    .img-apple {
+        img {
+            width: 208px;
+        margin-top: -18px;
+        margin-left: 3.5rem;
+    }
+
+    }
+    
+    .font-app {
+        
+        h1{
+            width: 95%;
+            margin-top: 20px;
+            font-size: 50px;
+            margin-left: 0.5rem;
+        }
+        .span-cuotas {
+            font-size: 25px;
+        }
+        .span-logo {
+            font-size: 27px;
+        }
+        .btnimg {
+            font-size: 13px;
+            padding: 5px 25px;
+            margin-left: -1rem;
+        }
+        
+    }
+
+
+    // CONTENIDO SECUNDARIO INDEX 
+
+    .img-secundaria-apple {
+        height: 300px;
+        img {
+            width: 350px;
+            margin-top: -26rem;
+        }
+    }
+    .textosec_apple {
+        
+        h2 {
+            font-size: 27px;
+            margin-bottom: -6.5rem;
+        }
+        span{
+            font-size: 25px;
+        }
+        button {
+            margin-bottom: -14rem;
+            font-size: 13px;
+            padding: 5px 15px;
+        }
+    }
+
+    // VIDEO INDEX 
+    .theme-darkap {
+    height: 620px;
+    
+    video {
+        position: absolute;
+        top: 49rem;
+    }
+
+        .mac-h3 {
+            font-size: 45px;
+            bottom: -21rem;
+            left: 24%;
+        }
+        .mac-h4{
+            font-size: 30px;
+            bottom: -26rem;
+            left: 31.3%;
+
+            img {
+            width: 60px;
+            }
+        }
+    
+        .mac-h5 {
+            width: 90%;
+            font-size: 20px;
+            top: 81rem;
+            left: 5%;
+        }
+    }
+    
+
+    // FOOTER ALL
+
+    .footer-apple {
+        flex-direction: column;
+        padding-bottom: 0.5rem;
+        margin-top: 0px;
+    }
+    
+    // PAGE PRODUCTOS
+
+    .img-product {
+        width: 100%;
+        height: 310px;
+        background: url("../Assets/background/page-product768.jpg");
+        background-size: cover;
+    }
+
+    .container-product {
+        grid-template-columns: repeat(2, auto);
+        justify-content: center;
+        gap: 1rem;
+
+        margin-left: 0;
+        margin-right: 0;
+        
+        justify-items: center;
+        align-items: center;
+        
+        .card {
+            width: 300px;
+        }
+    }
+
+    .footer-product {
+        margin-top: 40px;
+    }
+
+    // PAGE LOCATION
+
+    .nav-location {
+        height: 270px;
+    }
+
+    .portada-location {
+    
+            h4 {
+                font-size: 38px;
+            }
+            span {
+                font-size: 35px;
+            }
+
+    }
+    .contenedor-ubicación {
+        flex-direction: column;
+        
+        
+        .tamaño-ubi {
+            width: 100%;
+        }
+        
+        .border-ubi {
+            margin: 18px 21px 24px 37px;
+            padding: 5px;
+        }
+
+        img {
+            width: 450px;
+        }
+    
+        .iframe-ubi {
+            width: 90%;
+            margin: 20px 0px 20px 17px;
+        }
+    
+    }
+
+    .footer-location {
+        margin-top: 15px;
+    }
+
+    // PAGE CONTACT
+
+    .back-c {
+        width: 700px;
+        left: -3rem;
+        top: 6rem;
+    }
+
+    .h2-contact {
+        font-size: 20px;
+        top: 3rem;
+    }
+
+    .contenedor-form {
+        width: 400px;
+        padding: 0px;
+
+        top: 30rem;
+        
+    
+        p {
+            font-size: 18px;
+            
+        }
+        input {
+            width: 90%;
+            padding: 0;
+            background-color: transparent;
+            
+            color: white;
+
+            border: none;
+            border-bottom: 1px solid rgb(255, 255, 255);
+            outline: none;
+            
+        }
+        textarea {
+            width: 90%;
+            padding: -5px;
+        }
+        button {
+            padding: 0px;
+            top: 0rem;
+        }
+    }
+    
+    .footer-contact {
+        margin-top: 15rem !important;
+        bottom: -10rem;
+        left: -2.5rem;
+        
+    }    
+
+}
+
+
+
 @media only screen and (max-width: 576px) {
 
     body {
@@ -774,7 +1822,6 @@ span {
         overflow-x: hidden !important;
     }
     
-
     // PAGE INDEX
 
     // NAV BURGER INDEX ( HACER TODAS LAS PAGE) 
@@ -830,7 +1877,7 @@ span {
         
     }
 
-    .li-buy-index {
+    .li-buy {
         display: none;
         position: fixed;
         top: 17rem;
@@ -911,23 +1958,27 @@ span {
 
     // VIDEO INDEX 
     .theme-darkap {
-    height: 600px;
+    height: 390px;
     
     video {
         position: absolute;
         top: 48rem;
-        width: 100%;
+        
     }
 
         .mac-h3 {
-            font-size: 50px;
-            top: 45rem;
-            left: 34%;
+            font-size: 35px;
+            bottom: -15rem;
+            left: 23%;
         }
         .mac-h4{
             font-size: 25px;
-            top: 48rem;
-            left: 15%;
+            bottom: -17.7rem;
+            left: 31.3%;
+
+            img {
+                width: 40px;
+            }
         }
     
         .mac-h5 {
@@ -946,7 +1997,9 @@ span {
     .footer-apple {
         flex-direction: column;
         padding-bottom: 0.5rem;
-    }
+        margin-top: 107px;
+        }
+    
     
 
     // PAGE PRODUCTOS
@@ -973,6 +2026,115 @@ span {
         .card {
             width: 250px;
         }
+    }
+
+    .footer-product {
+        margin-top: 40px;
+    }
+
+    // PAGE LOCATION
+
+    .nav-location {
+        height: 270px;
+    }
+
+    .portada-location {
+    
+            h4 {
+                font-size: 38px;
+            }
+            span {
+                font-size: 35px;
+            }
+
+    }
+    .contenedor-ubicación {
+        flex-direction: column;
+        
+        
+        .tamaño-ubi {
+            width: 100%;
+        
+        }
+        
+        .border-ubi {
+            margin: 18px 21px 24px 37px;
+            padding: 5px;
+        }
+
+        img {
+            width: 400px;
+        }
+    
+        .iframe-ubi {
+            width: 90%;
+            height: 300px;
+            margin: 20px 0px -10px 17px;
+        }
+    
+    }
+
+    .footer-location {
+        margin-top: 40px;
+    }
+
+    // PAGE CONTACT
+
+    
+
+    .back-c {
+        width: 700px;
+        left: -3rem;
+        top: 6rem;
+    }
+
+
+    .h2-contact {
+        font-size: 20px;
+        top: 3rem;
+
+
+    }
+
+
+    .contenedor-form {
+        width: 400px;
+        padding: 0px;
+
+        top: 30rem;
+        
+
+        p {
+            font-size: 18px;
+            
+        }
+        input {
+            width: 90%;
+            padding: 0;
+            background-color: transparent;
+            
+            color: white;
+
+            border: none;
+            border-bottom: 1px solid rgb(255, 255, 255);
+            outline: none;
+            
+        }
+        textarea {
+            width: 90%;
+            padding: -5px;
+        }
+        button {
+            padding: 0px;
+            top: 0rem;
+        }
+    }
+    
+    .footer-contact {
+        margin-top: 15rem !important;
+        bottom: -10rem;
+        left: -2.5rem;
+        
     }
 
 }
